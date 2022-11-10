@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5628FCE7-D644-4DD4-AD6D-F6F4630D9363}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Donkey_Adventure_Game.My.MyApplication</StartupObject>
+    <RootNamespace>Donkey_Adventure_Game</RootNamespace>
+    <AssemblyName>Donkey Adventure Game</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Donkey Adventure Game.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Donkey Adventure Game.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Burro_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BadEnding.Designer.vb">
+      <DependentUpon>BadEnding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BadEnding.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Final.Designer.vb">
+      <DependentUpon>Final.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Final.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodEnding.Designer.vb">
+      <DependentUpon>GoodEnding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GoodEnding.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jogo_1.Designer.vb">
+      <DependentUpon>Jogo_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Jogo_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jogo_10.Designer.vb">
+      <DependentUpon>Jogo_10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Jogo_10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jogo_2.Designer.vb">
+      <DependentUpon>Jogo_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Jogo_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jogo_3.Designer.vb">
+      <DependentUpon>Jogo_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Jogo_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jogo_4.Designer.vb">
+      <DependentUpon>Jogo_4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Jogo_4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jogo_5.Designer.vb">
+      <DependentUpon>Jogo_5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Jogo_5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jogo_6.Designer.vb">
+      <DependentUpon>Jogo_6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Jogo_6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jogo_7.Designer.vb">
+      <DependentUpon>Jogo_7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Jogo_7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jogo_8.Designer.vb">
+      <DependentUpon>Jogo_8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Jogo_8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jogo_9.Designer.vb">
+      <DependentUpon>Jogo_9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Jogo_9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Início.Designer.vb">
+      <DependentUpon>Menu_Início.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Início.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NeutralEnding.Designer.vb">
+      <DependentUpon>NeutralEnding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NeutralEnding.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opcoes.Designer.vb">
+      <DependentUpon>Opcoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Opcoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Q1.Designer.vb">
+      <DependentUpon>Q1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Q1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Q2.Designer.vb">
+      <DependentUpon>Q2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Q2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Q3.Designer.vb">
+      <DependentUpon>Q3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Q3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Q4.Designer.vb">
+      <DependentUpon>Q4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Q4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Q5.Designer.vb">
+      <DependentUpon>Q5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Q5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Q6.Designer.vb">
+      <DependentUpon>Q6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Q6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Q7.Designer.vb">
+      <DependentUpon>Q7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Q7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rules.Designer.vb">
+      <DependentUpon>Rules.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rules.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecretEnding.Designer.vb">
+      <DependentUpon>SecretEnding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SecretEnding.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BadEnding.resx">
+      <DependentUpon>BadEnding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Final.resx">
+      <DependentUpon>Final.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodEnding.resx">
+      <DependentUpon>GoodEnding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jogo_1.resx">
+      <DependentUpon>Jogo_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jogo_10.resx">
+      <DependentUpon>Jogo_10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jogo_2.resx">
+      <DependentUpon>Jogo_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jogo_3.resx">
+      <DependentUpon>Jogo_3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jogo_4.resx">
+      <DependentUpon>Jogo_4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jogo_5.resx">
+      <DependentUpon>Jogo_5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jogo_6.resx">
+      <DependentUpon>Jogo_6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jogo_7.resx">
+      <DependentUpon>Jogo_7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jogo_8.resx">
+      <DependentUpon>Jogo_8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jogo_9.resx">
+      <DependentUpon>Jogo_9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Início.resx">
+      <DependentUpon>Menu_Início.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NeutralEnding.resx">
+      <DependentUpon>NeutralEnding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opcoes.resx">
+      <DependentUpon>Opcoes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Q1.resx">
+      <DependentUpon>Q1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Q2.resx">
+      <DependentUpon>Q2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Q3.resx">
+      <DependentUpon>Q3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Q4.resx">
+      <DependentUpon>Q4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Q5.resx">
+      <DependentUpon>Q5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Q6.resx">
+      <DependentUpon>Q6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Q7.resx">
+      <DependentUpon>Q7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rules.resx">
+      <DependentUpon>Rules.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecretEnding.resx">
+      <DependentUpon>SecretEnding.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Donkey Adventure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Burro_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Engrenagem_Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena1_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena1_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena1_3_Arco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena1_3_Desert Eagle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena1_3_Escudo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena1_3_Espada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena1_3_Juan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena1_3_PL-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena1_3_Punhos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena1_3_Shrek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena5_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena5_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena6_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena6_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena6_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cena7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Every JoJo Opening but it%27s pitch shifted All Star - The Sequel.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Every JoJo Opening but it%27s pitch shifted All Star - The Sequel_2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lord Farquaad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gato das botas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fiona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Homem-Biscoito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orquestra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Audio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shrek - Welcome to Duloc %28EU Portuguese%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fada_Madrinha_musica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shreck_musica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Burro_e_Gato_music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Burro_music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espelho Magico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Espelho_Arco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Espelho_Desert.Eagle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Espelho_Escudo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Espelho_Espada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Espelho_Juan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Espelho_PL-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Espelho_Punhos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Espelho_Shrek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lord Farquaad_corpo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bad_Ending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EasterEgg_Ending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Good_Ending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Neutral_Ending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Musica_Final_01.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
