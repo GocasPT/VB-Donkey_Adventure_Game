@@ -1,5 +1,5 @@
-sds AIB
-# VB---Donkey-Adventure-Game
+ESDS AIB
+# VB - Donkey Adventure Game
 
 Trabalho do Secundário.
 Jogo em quiz com 3 finais
